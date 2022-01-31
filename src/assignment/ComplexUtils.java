@@ -82,17 +82,16 @@ public class ComplexUtils {
 		
 		//TODO: implement here
 		if (num <= 1) {
-            return false;
+			return false;
 		}
 		
-        for (int i = 2; i < num; i ++) {
-        	
-        	if (num % i == 0) {
-        		return false;
-        	}
-        }
+		for (int i = 2; i < num; i ++) {
+			if (num % i == 0) {
+				return false;
+			}
+		}
         
-        return true;
+		return true;
 	}
 
 	/**
@@ -130,26 +129,26 @@ public class ComplexUtils {
 		
 		//Check value is prime?
 		for (int i = 2; i <= num; i++) {
-			
+				
 			/*
-    		 * Can also just use this
-    		if (isPrime(i) {
-    			primeNumber.add(i);
-    		}
-    		*/
+			Can also just use this
+			if (isPrime(i) {
+				primeNumber.add(i);
+			}
+			*/
 			
 			boolean isPrime = true;
 			
-    		for (int p:primeNumber) {
-    			if (i % p == 0) {
-    				isPrime = false;
-    				break;
-    			}
-    		}
+			for (int p:primeNumber) {
+				if (i % p == 0) {
+					isPrime = false;
+					break;
+				}
+			}
     		
-    		if (isPrime) {
-    			primeNumber.add(i);
-    		}
+			if (isPrime) {
+				primeNumber.add(i);
+			}
 		}
 		
 		//Format output
